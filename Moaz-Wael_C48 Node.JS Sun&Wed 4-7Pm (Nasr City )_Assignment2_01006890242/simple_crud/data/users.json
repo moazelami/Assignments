@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "id": "3ccba625-deb3-4948-989f-3eb7c60ea7c2",
+        "name": "Moaz",
+        "age": 19,
+        "email": "moaz@gmail.com"
+    },
+    {
+        "id": "113917c2-344c-493b-8c50-bcdb614a806c",
+        "name": "mohammed",
+        "age": 30,
+        "email": "moha@gmail.com"
+    },
+    {
+        "id": "8a303129-24e2-446b-978b-63bcc9b3c7c5",
+        "name": "mazen",
+        "age": 50,
+        "email": "mezo@gmail.com"
+    },
+    {
+        "id": "d8e58d60-0cc0-4514-8c24-08bb00057c44",
+        "name": "shoura",
+        "age": 99,
+        "email": "shosho@gmail.com"
+    }
+]

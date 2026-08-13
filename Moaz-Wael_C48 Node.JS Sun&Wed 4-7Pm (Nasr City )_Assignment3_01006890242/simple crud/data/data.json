@@ -1,0 +1,40 @@
+[
+    {
+        "id": "1",
+        "name": "moaaz",
+        "age": 19,
+        "password": "$2b$10$vPzukd68lgMRq0saP3FlzuuR2DiEpWNhW2oa6ht2HpCKC6ViPB8Bm"
+    },
+    {
+        "id": "2",
+        "name": "zeyaad mohammed",
+        "age": 49,
+        "email": "zeyad@gamil.com",
+        "password": "$2b$10$/wx/nywuFMU6ZU94SuO3JOJEnb.On0598v.phz8Y.yJoTTaKKEMya",
+        "isAdmin": true
+    },
+    {
+        "id": "7e717836-86a7-4ddf-8a4c-ef7a1b3877f3",
+        "name": "shoura",
+        "age": 29,
+        "email": "shosho@gmail.com",
+        "password": "$2b$10$oK76O.CUihFxVspuMWTWZeuJSBbyB.9g4dyPafcWdf/HEq2ZgVwtW",
+        "isAdmin": false
+    },
+    {
+        "id": "ccc59eed-8341-4eda-b7aa-7139d1a0b403",
+        "name": "sayed medhat",
+        "age": 15,
+        "email": "sayed@gamil.com",
+        "password": "$2b$10$uGg4zVMqlnPXcW0B0wfpj.BQXb5uM7FoBpm1r7v9EDyVUbDhCBzYq",
+        "isAdmin": false
+    },
+    {
+        "id": "20d9249f-1259-4741-a836-6522dab73b71",
+        "name": "saeed",
+        "age": 26,
+        "email": "saeed@gmail.com",
+        "password": "$2b$10$8w5Tq6.rHfnb/C5d1tViX.aoUrglP6u7jsC85/gLmof0zM7fyxUgy",
+        "isAdmin": false
+    }
+]

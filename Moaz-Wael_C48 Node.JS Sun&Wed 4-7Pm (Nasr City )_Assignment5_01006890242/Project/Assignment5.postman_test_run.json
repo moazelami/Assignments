@@ -1,0 +1,564 @@
+{
+	"id": "2a3855e8-64c2-4e65-abc9-9b93059b33dc",
+	"name": "Assignment3",
+	"timestamp": "2026-09-14T21:02:56.862Z",
+	"collection_id": "57000890-07e57858-c7da-46d0-a00d-df474eb8251a",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 16,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-09-14T21:02:55.262Z",
+	"totalFail": 16,
+	"results": [
+		{
+			"id": "939bc6f8-a7b3-4110-b9b7-6f5740f0486d",
+			"name": "POST Signup",
+			"url": "http://localhost:3000/users/signup",
+			"time": 69,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status is 201": true,
+				"Response has success true": true,
+				"Response has userId": true
+			},
+			"testPassFailCounts": {
+				"Status is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has success true": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has userId": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				69
+			],
+			"allTests": [
+				{
+					"Status is 201": true,
+					"Response has success true": true,
+					"Response has userId": true
+				}
+			]
+		},
+		{
+			"id": "cdfa373c-d9b5-4f83-8369-81bfa3d794af",
+			"name": "GET User by ID",
+			"url": "http://localhost:3000/users/3",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status is 200": true,
+				"Response is JSON": true,
+				"User id matches": true
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User id matches": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status is 200": true,
+					"Response is JSON": true,
+					"User id matches": true
+				}
+			]
+		},
+		{
+			"id": "0a35e14b-1c5c-4f53-937f-4e5cf3ab39c7",
+			"name": "GET User by Email",
+			"url": "http://localhost:3000/users/by-email?email=testuser_1789419775559@example.com",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status is 200": true,
+				"Response is JSON": true,
+				"Email matches": true
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email matches": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status is 200": true,
+					"Response is JSON": true,
+					"Email matches": true
+				}
+			]
+		},
+		{
+			"id": "6350ae5b-e616-4c7a-90be-7cc649c8d204",
+			"name": "PUT Update User",
+			"url": "http://localhost:3000/users/3",
+			"time": 2,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status is 200": false,
+				"Update success message present": false
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Update success message present": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status is 200": false,
+					"Update success message present": false
+				}
+			]
+		},
+		{
+			"id": "17da8a6b-6b47-46bc-8c0c-cf01c963e20f",
+			"name": "POST Create Post",
+			"url": "http://localhost:3000/posts",
+			"time": 4,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status is 201": false,
+				"Post created message": true
+			},
+			"testPassFailCounts": {
+				"Status is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Post created message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status is 201": false,
+					"Post created message": true
+				}
+			]
+		},
+		{
+			"id": "beeb264a-0272-4eee-9e99-cee7c4ca7373",
+			"name": "GET Posts with Details",
+			"url": "http://localhost:3000/posts/details",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status is 200": true,
+				"Response is JSON": true
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status is 200": true,
+					"Response is JSON": true
+				}
+			]
+		},
+		{
+			"id": "163bf1ed-6724-4d42-91a5-fc455c6be27a",
+			"name": "GET Posts with Comment Counts",
+			"url": "http://localhost:3000/posts/comment-count",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status is 200": true,
+				"Response is JSON": true
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status is 200": true,
+					"Response is JSON": true
+				}
+			]
+		},
+		{
+			"id": "f633edfb-32a6-4ccf-adac-833d5269006b",
+			"name": "POST Create Comments (bulk)",
+			"url": "http://localhost:3000/comments",
+			"time": 3,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status is 201": false,
+				"Comments created message": false
+			},
+			"testPassFailCounts": {
+				"Status is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Comments created message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status is 201": false,
+					"Comments created message": false
+				}
+			]
+		},
+		{
+			"id": "c1d386aa-3110-48dc-a88e-1449feeba6e5",
+			"name": "POST Find or Create Comment",
+			"url": "http://localhost:3000/comments/find-or-create",
+			"time": 4,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status is 200": false,
+				"Response has commentId": false
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has commentId": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status is 200": false,
+					"Response has commentId": false
+				}
+			]
+		},
+		{
+			"id": "d0219a33-b19c-4142-a269-77b3b3aaaf14",
+			"name": "PATCH Update Comment",
+			"url": "http://localhost:3000/comments/",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status is 201": false,
+				"Comment updated message": false
+			},
+			"testPassFailCounts": {
+				"Status is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Comment updated message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status is 201": false,
+					"Comment updated message": false
+				}
+			]
+		},
+		{
+			"id": "e6061a06-cf1d-4161-a0e7-ac4f9511b57e",
+			"name": "GET Search Comments",
+			"url": "http://localhost:3000/comments/search?word=test",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status is 200": true,
+				"Response is JSON": true
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status is 200": true,
+					"Response is JSON": true
+				}
+			]
+		},
+		{
+			"id": "903a6983-c6d7-41a3-839e-5f2c0309f0f3",
+			"name": "GET Newest Comments for Post",
+			"url": "http://localhost:3000/comments/newest/",
+			"time": 2,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status is 200": false,
+				"Response is JSON": false
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response is JSON": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status is 200": false,
+					"Response is JSON": false
+				}
+			]
+		},
+		{
+			"id": "197dcaac-74e7-4a3e-8491-68c0a99b09db",
+			"name": "GET Comment Details",
+			"url": "http://localhost:3000/comments/details/",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status is 200": false,
+				"Response is JSON": false,
+				"Comment id matches": false
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response is JSON": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Comment id matches": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status is 200": false,
+					"Response is JSON": false,
+					"Comment id matches": false
+				}
+			]
+		},
+		{
+			"id": "f77de050-1077-440d-9ca3-4d57ebf5004a",
+			"name": "DELETE Post",
+			"url": "http://localhost:3000/posts/",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status is 200": false,
+				"Post deleted message": false
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Post deleted message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status is 200": false,
+					"Post deleted message": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 114,
+	"collection": {
+		"requests": [
+			{
+				"id": "939bc6f8-a7b3-4110-b9b7-6f5740f0486d",
+				"method": "POST"
+			},
+			{
+				"id": "cdfa373c-d9b5-4f83-8369-81bfa3d794af",
+				"method": "GET"
+			},
+			{
+				"id": "0a35e14b-1c5c-4f53-937f-4e5cf3ab39c7",
+				"method": "GET"
+			},
+			{
+				"id": "6350ae5b-e616-4c7a-90be-7cc649c8d204",
+				"method": "PUT"
+			},
+			{
+				"id": "17da8a6b-6b47-46bc-8c0c-cf01c963e20f",
+				"method": "POST"
+			},
+			{
+				"id": "beeb264a-0272-4eee-9e99-cee7c4ca7373",
+				"method": "GET"
+			},
+			{
+				"id": "163bf1ed-6724-4d42-91a5-fc455c6be27a",
+				"method": "GET"
+			},
+			{
+				"id": "f633edfb-32a6-4ccf-adac-833d5269006b",
+				"method": "POST"
+			},
+			{
+				"id": "c1d386aa-3110-48dc-a88e-1449feeba6e5",
+				"method": "POST"
+			},
+			{
+				"id": "d0219a33-b19c-4142-a269-77b3b3aaaf14",
+				"method": "PATCH"
+			},
+			{
+				"id": "e6061a06-cf1d-4161-a0e7-ac4f9511b57e",
+				"method": "GET"
+			},
+			{
+				"id": "903a6983-c6d7-41a3-839e-5f2c0309f0f3",
+				"method": "GET"
+			},
+			{
+				"id": "197dcaac-74e7-4a3e-8491-68c0a99b09db",
+				"method": "GET"
+			},
+			{
+				"id": "f77de050-1077-440d-9ca3-4d57ebf5004a",
+				"method": "DELETE"
+			}
+		]
+	}
+}

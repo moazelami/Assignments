@@ -12,8 +12,13 @@ const createLogsCollection = async () => {
     return await collectionRepo.createLogsCollection();
 };
 
+const createBooksTitleIndex = async () => {
+    return await collectionRepo.createBooksTitleIndex();
+};
+
 module.exports = {
     createBooksCollection,
     createAuthor,
     createLogsCollection,
+    createBooksTitleIndex,
 };

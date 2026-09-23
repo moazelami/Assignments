@@ -15,5 +15,8 @@ router.post(
     '/logs/capped',
     collectionController.createLogsCollection
 );
-
+router.post(
+    '/books/index',
+    collectionController.createBooksTitleIndex
+);
 module.exports = router;

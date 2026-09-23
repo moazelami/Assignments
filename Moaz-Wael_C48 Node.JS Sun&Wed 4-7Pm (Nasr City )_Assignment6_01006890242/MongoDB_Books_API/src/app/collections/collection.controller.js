@@ -43,8 +43,21 @@ const createLogsCollection = async (req, res, next) => {
     }
 };
 
+const createBooksTitleIndex = async (req, res, next) => {
+    try {
+        const result = await collectionService.createBooksTitleIndex();
+
+        res.status(201).json({
+            result
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
 module.exports = {
     createBooksCollection,
     createAuthor,
     createLogsCollection,
+    createBooksTitleIndex,
 };
